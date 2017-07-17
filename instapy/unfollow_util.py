@@ -48,7 +48,7 @@ def unfollow(browser, username, amount, dont_include, onlyInstapyFollowed, autom
     sleep(2)
 
     # find dialog box
-    dialog = browser.find_element_by_xpath('/html/body/div[2]/div/div[2]/div/div[2]')
+    dialog = browser.find_element_by_xpath('//div[@role=\'dialog\']')
 
     # scroll down the page
     scroll_bottom(browser, dialog, allfollowing)
