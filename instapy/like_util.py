@@ -109,8 +109,7 @@ def get_links_for_tag(browser, tag, amount, media=None):
 
     abort = True
     try:
-        load_button = body_elem.find_element_by_xpath \
-            ('//a[contains(@class, "_8imhp _glz1g")]')
+        load_button = body_elem.find_element_by_xpath('//a[contains(@href, "explore/tags")]')
     except:
         print('Load button not found, working with current images!')
     else:
